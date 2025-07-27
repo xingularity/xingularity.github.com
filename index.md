@@ -45,7 +45,7 @@ To build this documentation:
 
 ## Mathematical Example
 
-Here's a quick example of inline math: $E = mc^2$
+Here's a quick example of inline mathematics: $E = mc^2$
 
 And a display equation:
 
