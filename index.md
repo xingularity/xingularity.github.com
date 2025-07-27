@@ -33,6 +33,10 @@ To build this documentation:
    ```bash
    make html
    ```
+   or
+   ```bash
+   sphinx-build . _build
+   ```
 
 3. Serve locally:
    ```bash
