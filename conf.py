@@ -20,6 +20,8 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
     'sphinx.ext.mathjax',
+    'nbsphinx',
+    'sphinx.ext.intersphinx',
 ]
 
 templates_path = ['_templates']
@@ -53,6 +55,39 @@ myst_dmath_double_inline = True
 
 # Source file suffixes
 source_suffix = {
-    '.rst': None,
-    '.md': None,
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+    '.ipynb': 'jupyter_notebook',
 }
+
+# -- nbsphinx Configuration --------------------------------------------------
+# Don't execute notebooks during build (for performance and reproducibility)
+nbsphinx_execute = 'never'
+
+# Timeout for notebook execution (if enabled)
+nbsphinx_timeout = 60
+
+# Allow errors in notebooks (optional)
+nbsphinx_allow_errors = True
+
+# Configure notebook kernels
+nbsphinx_kernel_name = 'python3'
+
+# Use nbconvert's built-in HTML converter instead of Pandoc
+nbsphinx_codecell_lexer = 'ipython3'
+
+# Suppress pandoc warnings and use alternative conversion
+suppress_warnings = ['nbsphinx.pandoc']
+
+# Configure nbsphinx to work without pandoc by using nbconvert directly
+import os
+import sys
+try:
+    # Try to use system pandoc if available
+    import subprocess
+    result = subprocess.run(['pandoc', '--version'], capture_output=True, text=True)
+    if result.returncode != 0:
+        raise FileNotFoundError
+except (FileNotFoundError, subprocess.SubprocessError):
+    # If pandoc not found, configure nbsphinx to use alternatives
+    pass
