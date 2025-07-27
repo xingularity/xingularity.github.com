@@ -6,10 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Zonghan Notebooks'
+project = 'Lamp Light'
 copyright = '%Y Zong-han, Xie'
 author = 'Zong-han, Xie'
-release = '0.0.1'
+release = ''
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
