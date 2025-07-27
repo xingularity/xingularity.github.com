@@ -18,39 +18,6 @@ Welcome to the Sphinx Test Documentation repository! This documentation demonstr
 articles/mathematics
 articles/physics
 articles/computer-science
+articles/aboutme
 ```
 
-## Quick Start
-
-To build this documentation:
-
-1. Install dependencies:
-   ```bash
-   make install
-   ```
-
-2. Build HTML documentation:
-   ```bash
-   make html
-   ```
-   or
-   ```bash
-   sphinx-build . _build
-   ```
-
-3. Serve locally:
-   ```bash
-   make serve
-   ```
-
-## Mathematical Example
-
-Here's a quick example of inline mathematics: $E = mc^2$
-
-And a display equation:
-
-$$
-\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}
-$$
-
-Enjoy exploring the documentation!
