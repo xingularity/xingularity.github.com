@@ -1,6 +1,10 @@
 sphinx>=5.0.0
 myst-parser>=0.18.0
 sphinx-rtd-theme>=1.0.0
+sphinx-pdj-theme>=0.5.0
+sphinx_book_theme>=1.1.4
+sphinx-press-theme>=0.9.1
+groundwork-sphinx-theme>=1.1.1
 linkify-it-py>=2.0.0
 sphinx-design>=0.6
 nbsphinx>=0.8.0
