@@ -5,9 +5,9 @@ Enjoy your journey on these studies!
 ```{toctree}
 :maxdepth: 5
 
-articles/mathematics
-articles/physics
-articles/computer-science
+articles/aboutme
+#articles/mathematics
+#articles/physics
+#articles/computer-science
 ```
-
 
